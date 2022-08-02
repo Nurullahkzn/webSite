@@ -107,3 +107,63 @@
     margin-top: 5vh;
     background-color: rgba(0, 0, 0, 0.4);
 }
+.admin{
+    height: auto;
+    width: 100vw;
+    padding: 10vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminPanel{
+    height: 45vh;
+    width: 40vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+.buttonTwo{
+    height: 5vh;
+    width: 15vw;
+    margin: 2vh;
+    color: rgb(0, 0, 0,);
+    box-shadow: 4px 4px 4px black;
+    font-size: 3vh;
+}
+.buttonTwo:hover{
+    width: 15.5vw;
+}
+#search{
+    height: 5vh;
+    width: 15vw;
+    margin: 2vh;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+}
+.adminHead{
+    height: 5vh;
+    width: 25vw;
+    margin: 2vh;
+    color: var(--white);
+    font-size: 3vh;
+    background-color: green;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.adminBottom{
+    height: 5vh;
+    width: 25vw;
+    margin: 2vh;
+    background-color: green;
+    border: 2px solid rgb(0, 0, 0); 
+}
+.incomingData{
+    min-height: 45vh;
+    height: auto;
+    width: 40vw;
+    flex-direction: column;
+}
