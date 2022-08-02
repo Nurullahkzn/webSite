@@ -25,28 +25,26 @@
 
 
 
-// const searchEl = document.getElementById('search')
-// const singleUserEl = document.querySelector('.single-user')
+    const searchEl = document.getElementById('search')
+    const singleUserEl = document.querySelector('.single-user')
+    async function searchUser(searchInput) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/?name=${searchInput}`)
+    const data = await response.json()
 
-// async function searchUser(searchInput) {
-//   const response = await fetch(`https://jsonplaceholder.typicode.com/users/?name=${searchInput}`)
-//   const data = await response.json()
+    singleUserEl.innerHTML += `
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title">${data[0].name}</h5>
+        <p class="card-text">${data[0].email}</p>
+        </div>
+    </div>
+    `
+    }
 
-//   singleUserEl.innerHTML += `
-//    <div class="card" style="width: 18rem;">
-//      <div class="card-body">
-//        <h5 class="card-title">${data[0].name}</h5>
-//        <p class="card-text">${data[0].email}</p>
-//      </div>
-//    </div>
-//   `
-// }
-
-// function getSingleUser() {
-//   let input = searchEl.value
-
-//   searchUser(input)
-// }
+    function getSingleUser() {
+    let input = searchEl.value
+    searchUser(input)
+    }
 
 
 // const sonuc=document.getElementById("sonuc");
