@@ -20,15 +20,14 @@
         </div>
         <div class="loginArea">
             <div class="loginImage" style="background-image:url('./Image/second-image.jpg');" ></div>
-            <div class="loginPage">
+            <div class="loginPage"> 
                 
-                <input type="text" id="input" name="email" placeholder="Your e-mail..">
-                <input type="password" id="input" name="email" placeholder="Your password..">   
-                
-                <div class="login">
-                    <button id="thirdButton" class="button" onclick="parent.location='./officialPage.html', enter()">Login</button>
-                </div>
-                <div class="goster"></div>
+                <input type="text" class="input" id="email" placeholder="Your e-mail..">
+                <input type="password" class="input" id="password" placeholder="Your password..">   
+                <input type="submit" class="loginButton" value="Login" onclick="validate()">
+                <!-- <div class="login">
+                    <button id="thirdButton" class="button" onclick="parent.location='./officialPage.html'">Login</button>
+                </div> -->
 
             </div>
         </div>
@@ -40,6 +39,6 @@
     
 
 
-   <script src="./webSite.js"></script>
+   <script src="./password.js"></script>
 </body>
 </html>

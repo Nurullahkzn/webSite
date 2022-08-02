@@ -22,11 +22,19 @@
         <div class="admin">
             <div class="adminPanel">
                 <span class="adminHead">Admin</span>
-                <input type="text" id="search" placeholder="Search..">
+                <input type="text" class="search" placeholder="Search Name..">
                 <button id="fourthButton" class="buttonTwo" onclick="enter()">Registered Users</button>
-                <button id="fifthButton" class="buttonTwo" onclick="save()">Save Users</button>
+                <button id="fifthButton" class="buttonTwo" onclick="task()">What To Do</button>
                 <div class="adminBottom"></div>
+                <ol id="todos">
+
+                </ol>
             </div>
+            <!-- <div class="userPhotos">
+                <ol id="photo">
+
+                </ol>
+            </div> -->
             <div class="incomingData">
                 <ol id="users">
 
@@ -44,5 +52,6 @@
 
 
    <script src="./webSite.js"></script>
+    <script src="./search.js"></script>
 </body>
 </html>

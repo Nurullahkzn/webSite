@@ -67,9 +67,11 @@
 .loginPage{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
-#input{
+.input{
     height: 6vh;
     width: 20vw;
     margin-left: 5vw;
@@ -99,7 +101,6 @@
 }
 .button:hover{
     height: 5.5vh;
-    width: 8.2vw;
 }
 .footer{
     height: 4vh;
@@ -109,7 +110,6 @@
 }
 .admin{
     height: auto;
-    width: 100vw;
     padding: 10vh;
     flex-direction: row;
     display: flex;
@@ -117,13 +117,24 @@
     align-items: top;
 }
 .adminPanel{
-    height: 45vh;
+    height: auto;
     width: 40vw;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+.loginButton{
+    height: 6vh;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 3vh;
+    color: var(--white);
+    box-shadow: 4px 4px 4px black;
+    background-color: green;
 }
 .buttonTwo{
     height: 5vh;
@@ -136,7 +147,7 @@
 .buttonTwo:hover{
     width: 15.5vw;
 }
-#search{
+.search{
     height: 5vh;
     width: 15vw;
     margin: 2vh;
@@ -161,9 +172,30 @@
     background-color: green;
     border: 2px solid rgb(0, 0, 0); 
 }
+/* .photos{
+    min-height: 45vh;
+    height: auto;
+    width: 10vw;
+    flex-direction: column;
+} */
 .incomingData{
     min-height: 45vh;
     height: auto;
     width: 40vw;
     flex-direction: column;
+}
+#firstBox{
+    height: auto;
+    width: 30vw;
+    font-size: 3vh;
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    box-shadow: 3px 3px 3px black;
+}
+#secondBox{
+    height: auto;
+    width: 30vw;
+    font-size: 3vh;
+    margin-bottom: 2vh;
 }
