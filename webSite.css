@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Blue: #083bc6;
+    --white: #e2e2e2;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 6vh;
+    width: 100vw;
+    position: absolute;
+    z-index: +1;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--white);
+    margin-left: 2vw;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.layout{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sloganArea{
+    top: 0;
+    min-height: 60vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.slogan{
+    font-size: 5rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 6px 6px 6px black;
+}
+.loginArea{
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginImage{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh;
+}
+.loginPage{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+#input{
+    height: 6vh;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 0.75vh;
+    font-size: 3vh;
+}
+.login{
+    height: 5vh;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.button{
+    height: 5vh;
+    width: 8vw;
+    margin: 2vh;
+    margin-right: 0;
+    background-color: green;
+    color: var(--white);
+    box-shadow: 4px 4px 4px black;
+    font-size: 3vh;
+}
+.button:hover{
+    height: 5.5vh;
+    width: 8.2vw;
+}
+.footer{
+    height: 4vh;
+    width: 100vw;
+    margin-top: 5vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
